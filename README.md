@@ -1,4 +1,4 @@
-# NextJS Tutorial
+# Next.js Tutorial
 
 ### 📜 References
 
