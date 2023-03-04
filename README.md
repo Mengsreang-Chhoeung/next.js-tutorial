@@ -290,16 +290,6 @@ To use Server-side Rendering for a page, you need to `export` an `async` functio
 For example, suppose that your page needs to pre-render frequently updated data (fetched from an external API). You can write `getServerSideProps` which fetches this data and passes it to `Page` like below:
 
 ```tsx
-// This gets called on every request
-export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await fetch(`https://.../data`);
-  const data = await res.json();
-
-  // Pass data to the page via props
-  return { props: { data } };
-}
-
 import React from "react";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
